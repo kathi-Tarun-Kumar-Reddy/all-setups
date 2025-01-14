@@ -21,8 +21,8 @@ git:- git -v
 docker:- docker version
 tomcat:- systemctl status tomcat
 
-Port numbers:- 
 
+#Port numbers:- 
 Jenkins: 8080
 Tomcat: 8080
 Nexus : 8081

@@ -33,3 +33,8 @@ sudo chkconfig nexus on
 sudo systemctl start nexus
 sudo systemctl status nexus
 
+
+
+
+#to check the connection 
+sudo chkconfig nexus on

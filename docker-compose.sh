@@ -3,3 +3,18 @@ ls /usr/local/bin/
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose version
+
+
+
+#Docker-compose Commands: -
+
+docker-compose ps
+docker-compose images
+docker-compose down
+docker-compose up -d
+docker-compose stop
+docker-compose start
+docker-compose logs
+docker-compose config
+docker-compose pause
+docker-compose unpause

@@ -1,0 +1,30 @@
+#Dependencies Plugin to install in jenkins
+
+Tomcat : - deploy to container
+Nexus : - Nexus artifact Uploader
+Sonar Cube: - sonarQube Scanner
+ansible:- publish over ssh
+Docker: - Docker pipeline (to push the image to docker hub)
+
+
+#Java versions used:-
+Jenkins -- yum install java-17-amazon-corretto -y
+tomcat -- will support all versions of java ( amazon-linux-extras install java-openjdk11 -y or java-1.8.0-openjdk -y or yum install java-17-amazon-corretto-jmods -y)
+nexus -- yum install java-17-amazon-corretto-jmods -y
+sonar cube -- yum install java-17-amazon-corretto -y
+
+#To check versions:
+java:- java -version
+maven:- mvn -v
+httpd:- httpd
+git:- git -v
+docker:- docker version
+tomcat:- systemctl status tomcat
+
+#To reload the daemon
+systemctl daemon-reload
+
+#to scan image we will use 
+trivy
+#to scan code we will use
+Sonar
